@@ -1,4 +1,4 @@
-Here's your complete code — select it all and paste it into GitHub:Copy everything below this line starting with `<!DOCTYPE html>` and paste it into the GitHub editor:
+Here you go! Copy everything from `<!DOCTYPE html>` all the way to the last `</html>` and paste it into the GitHub editor:The file got truncated — let me grab the missing middle section too:Got it all! Here's the complete code — copy everything below starting with `<!DOCTYPE html>`:
 
 ```html
 <!DOCTYPE html>
@@ -7,71 +7,155 @@ Here's your complete code — select it all and paste it into GitHub:Copy everyt
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Alonna's Nursing Study Hub</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --lavender-deep:#7C5CBF;--lavender-mid:#A98DD6;--lavender-soft:#C9B8E8;
-      --lavender-pale:#EDE6F8;--blush:#E8B4D0;--rose:#D47FA6;--mint:#A8D8C8;
-      --periwinkle:#8BA7D9;--gold:#E8C97A;--bg:#F7F4FD;--white:#FFFFFF;
-      --text-dark:#2D1B5E;--text-mid:#5A3F8A;--text-light:#8B73B8;
-      --card-shadow:0 4px 24px rgba(124,92,191,0.10);
-      --card-hover:0 8px 36px rgba(124,92,191,0.18);
+      --lilac:#D8B4FE;--lilac-soft:#EDE9FE;--lilac-pale:#FAF5FF;
+      --blush:#FBCFE8;--blush-soft:#FCE7F3;--blush-pale:#FDF2F8;
+      --skyblue:#BAE6FD;--skyblue-soft:#E0F2FE;--skyblue-pale:#F0F9FF;
+      --lavender:#C4B5FD;--rose:#F9A8D4;--gold:#FBBF24;--mint:#A7F3D0;
+      --white:#FFFFFF;--bg:#FDF8FF;--text-dark:#2D1B69;--text-mid:#5B3A8A;
+      --text-muted:#9370BB;--border:#EDD9FF;
+      --card-shadow:0 4px 28px rgba(196,181,253,0.20);
+      --card-hover:0 12px 40px rgba(196,181,253,0.32);
     }
     html{scroll-behavior:smooth;}
-    body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text-dark);min-height:100vh;}
-    header{background:linear-gradient(135deg,#4A2A8A 0%,#7C5CBF 40%,#A98DD6 70%,#D4A8E8 100%);padding:56px 24px 48px;text-align:center;position:relative;overflow:hidden;}
-    header::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 50%,rgba(232,180,208,0.25) 0%,transparent 50%),radial-gradient(circle at 80% 20%,rgba(139,167,217,0.25) 0%,transparent 50%);pointer-events:none;}
-    .header-pill{display:inline-block;background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.35);color:rgba(255,255,255,0.92);font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;padding:6px 18px;border-radius:100px;margin-bottom:20px;}
-    header h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:700;color:#fff;line-height:1.15;margin-bottom:12px;}
-    header p{font-size:1rem;color:rgba(255,255,255,0.82);font-weight:300;max-width:420px;margin:0 auto;line-height:1.6;}
-    .orb{position:absolute;border-radius:50%;opacity:0.18;animation:float 6s ease-in-out infinite;}
-    .orb-1{width:120px;height:120px;background:var(--blush);top:-30px;left:8%;}
-    .orb-2{width:80px;height:80px;background:var(--mint);bottom:10px;right:12%;animation-delay:2s;}
-    .orb-3{width:60px;height:60px;background:var(--gold);top:20px;right:25%;animation-delay:4s;}
-    .orb-4{width:100px;height:100px;background:var(--periwinkle);bottom:-20px;left:30%;animation-delay:1s;}
-    @keyframes float{0%,100%{transform:translateY(0px);}50%{transform:translateY(-12px);}}
-    main{max-width:900px;margin:0 auto;padding:48px 20px 80px;}
-    .section-label{font-size:0.72rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--lavender-mid);margin-bottom:28px;display:flex;align-items:center;gap:10px;}
-    .section-label::after{content:'';flex:1;height:1px;background:linear-gradient(to right,var(--lavender-soft),transparent);}
+    body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text-dark);min-height:100vh;overflow-x:hidden;}
+    body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cellipse cx='30' cy='30' rx='4' ry='8' fill='%23F9A8D4' opacity='.13'/%3E%3Cellipse cx='30' cy='30' rx='4' ry='8' fill='%23FBCFE8' opacity='.11' transform='rotate(90 30 30)'/%3E%3Ccircle cx='30' cy='30' r='3' fill='%23FBBF24' opacity='.18'/%3E%3Cellipse cx='110' cy='80' rx='4' ry='8' fill='%23C4B5FD' opacity='.12'/%3E%3Cellipse cx='110' cy='80' rx='4' ry='8' fill='%23DDD6FE' opacity='.10' transform='rotate(90 110 80)'/%3E%3Ccircle cx='110' cy='80' r='3' fill='%23FBBF24' opacity='.16'/%3E%3Cellipse cx='70' cy='130' rx='4' ry='8' fill='%23BAE6FD' opacity='.12'/%3E%3Cellipse cx='70' cy='130' rx='4' ry='8' fill='%23BFDBFE' opacity='.10' transform='rotate(90 70 130)'/%3E%3Ccircle cx='70' cy='130' r='3' fill='%23FBBF24' opacity='.16'/%3E%3C/svg%3E");background-size:160px 160px;pointer-events:none;z-index:0;}
+    header{background:linear-gradient(160deg,#EDD9FF 0%,#E0C8FC 12%,#F5D0E8 28%,#FEF08A 45%,#D6EEFF 62%,#E8D5FB 78%,#FAD4EA 100%);padding:48px 24px 44px;text-align:center;position:relative;overflow:hidden;z-index:1;border-bottom:2px solid rgba(255,255,255,0.7);}
+    .header-flowers{position:absolute;inset:0;pointer-events:none;}
+    .fl{animation:sway 6s ease-in-out infinite;transform-origin:bottom center;}
+    .fl:nth-child(1){animation-delay:0s;}.fl:nth-child(2){animation-delay:1.2s;}.fl:nth-child(3){animation-delay:2.5s;}.fl:nth-child(4){animation-delay:0.7s;}.fl:nth-child(5){animation-delay:1.8s;}.fl:nth-child(6){animation-delay:3.1s;}.fl:nth-child(7){animation-delay:0.4s;}
+    @keyframes sway{0%,100%{transform:rotate(-4deg);}50%{transform:rotate(4deg) translateY(-6px);}}
+    .header-pill{display:inline-block;background:rgba(255,255,255,0.55);border:1.5px solid rgba(255,255,255,0.80);color:var(--text-mid);font-family:'Nunito',sans-serif;font-size:0.76rem;font-weight:900;letter-spacing:0.14em;text-transform:uppercase;padding:6px 20px;border-radius:100px;margin-bottom:18px;position:relative;z-index:2;}
+    header h1{font-family:'Nunito',sans-serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:900;color:var(--text-dark);line-height:1.15;margin-bottom:12px;position:relative;z-index:2;}
+    header p{font-size:1rem;color:var(--text-mid);font-weight:500;max-width:420px;margin:0 auto;line-height:1.6;position:relative;z-index:2;}
+    main{max-width:920px;margin:0 auto;padding:44px 20px 80px;position:relative;z-index:1;}
+    .section-label{font-family:'Nunito',sans-serif;font-size:0.73rem;font-weight:900;letter-spacing:0.18em;text-transform:uppercase;color:var(--lavender);margin-bottom:28px;display:flex;align-items:center;gap:12px;}
+    .section-label::after{content:'';flex:1;height:2px;background:linear-gradient(to right,var(--blush),#FEF08A,var(--skyblue-soft),transparent);border-radius:2px;}
     .classes-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(380px,1fr));gap:24px;}
-    .class-card{background:var(--white);border-radius:20px;box-shadow:var(--card-shadow);overflow:hidden;transition:transform 0.25s ease,box-shadow 0.25s ease;}
-    .class-card:hover{transform:translateY(-4px);box-shadow:var(--card-hover);}
-    .card-header{padding:22px 24px 18px;position:relative;overflow:hidden;}
-    .card-header::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 50%,rgba(255,255,255,0.15) 0%,transparent 60%);}
-    .med-surg .card-header{background:linear-gradient(135deg,#7C5CBF,#A98DD6,#C9A8DC);}
-    .pharmacology .card-header{background:linear-gradient(135deg,#C06BA8,#D47FA6,#E8B4D0);}
-    .ethics .card-header{background:linear-gradient(135deg,#5A8AC4,#8BA7D9,#B4C8EE);}
-    .informatics .card-header{background:linear-gradient(135deg,#4AA89A,#A8D8C8,#C8EAE4);}
-    .card-icon{font-size:2rem;margin-bottom:8px;position:relative;z-index:1;}
-    .card-title{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;color:#fff;position:relative;z-index:1;}
-    .card-subtitle{font-size:0.78rem;color:rgba(255,255,255,0.80);margin-top:3px;position:relative;z-index:1;font-weight:400;}
-    .folder-list{padding:16px 20px 20px;display:flex;flex-direction:column;gap:8px;}
-    .folder-link{display:flex;align-items:center;gap:12px;padding:11px 14px;border-radius:12px;text-decoration:none;color:var(--text-mid);font-size:0.88rem;font-weight:500;background:var(--lavender-pale);transition:background 0.18s,color 0.18s,transform 0.15s;}
-    .folder-link:hover{background:var(--lavender-soft);color:var(--lavender-deep);transform:translateX(4px);}
+    .class-card{background:var(--white);border-radius:24px;box-shadow:var(--card-shadow);overflow:hidden;transition:transform 0.25s ease,box-shadow 0.25s ease;}
+    .class-card:hover{transform:translateY(-6px);box-shadow:var(--card-hover);}
+    .card-header{padding:22px 22px 18px;position:relative;overflow:hidden;}
+    .card-header::after{content:'';position:absolute;bottom:-8px;right:-8px;width:80px;height:80px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cellipse cx='55' cy='52' rx='6' ry='12' fill='white' opacity='.18'/%3E%3Cellipse cx='55' cy='52' rx='6' ry='12' fill='white' opacity='.14' transform='rotate(90 55 52)'/%3E%3Ccircle cx='55' cy='52' r='5' fill='white' opacity='.22'/%3E%3C/svg%3E");pointer-events:none;}
+    .med-surg .card-header{background:linear-gradient(135deg,#D8B4FE,#E9D5FF,#F5D0E8);}
+    .pharmacology .card-header{background:linear-gradient(135deg,#F9A8D4,#FBCFE8,#BAE6FD);}
+    .ethics .card-header{background:linear-gradient(135deg,#BAE6FD,#BFDBFE,#FBCFE8);}
+    .informatics .card-header{background:linear-gradient(135deg,#C4B5FD,#DDD6FE,#FCE7F3);}
+    .card-icon{font-size:2.4rem;margin-bottom:8px;position:relative;z-index:1;}
+    .card-title{font-family:'Nunito',sans-serif;font-size:1.4rem;font-weight:900;position:relative;z-index:1;}
+    .med-surg .card-title{color:#4C1D95;}.pharmacology .card-title{color:#831843;}.ethics .card-title{color:#1E3A8A;}.informatics .card-title{color:#3B0764;}
+    .card-subtitle{font-size:0.8rem;margin-top:3px;position:relative;z-index:1;font-weight:500;}
+    .med-surg .card-subtitle{color:rgba(76,29,149,0.65);}.pharmacology .card-subtitle{color:rgba(131,24,67,0.65);}.ethics .card-subtitle{color:rgba(30,58,138,0.65);}.informatics .card-subtitle{color:rgba(59,7,100,0.65);}
+    .folder-list{padding:16px 18px 20px;display:flex;flex-direction:column;gap:8px;background:var(--white);}
+    .folder-link{display:flex;align-items:center;gap:12px;padding:11px 14px;border-radius:12px;text-decoration:none;font-size:0.88rem;font-weight:600;transition:background 0.18s,transform 0.15s;}
+    .med-surg .folder-link{background:var(--lilac-pale);color:#5B21B6;}.med-surg .folder-link:hover{background:var(--lilac-soft);color:#4C1D95;transform:translateX(4px);}.med-surg .folder-icon{background:rgba(196,181,253,0.22);}
+    .pharmacology .folder-link{background:var(--blush-pale);color:#9D174D;}.pharmacology .folder-link:hover{background:var(--blush-soft);color:#831843;transform:translateX(4px);}.pharmacology .folder-icon{background:rgba(249,168,212,0.22);}
+    .ethics .folder-link{background:var(--skyblue-pale);color:#1E40AF;}.ethics .folder-link:hover{background:var(--skyblue-soft);color:#1E3A8A;transform:translateX(4px);}.ethics .folder-icon{background:rgba(186,230,253,0.28);}
+    .informatics .folder-link{background:#F5F3FF;color:#5B21B6;}.informatics .folder-link:hover{background:var(--lilac-soft);color:#3B0764;transform:translateX(4px);}.informatics .folder-icon{background:rgba(167,139,250,0.18);}
     .folder-icon{font-size:1rem;width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-    .med-surg .folder-icon{background:rgba(124,92,191,0.12);}
-    .pharmacology .folder-icon{background:rgba(212,127,166,0.12);}
-    .ethics .folder-icon{background:rgba(91,138,196,0.12);}
-    .informatics .folder-icon{background:rgba(74,168,154,0.12);}
-    .folder-count{margin-left:auto;font-size:0.72rem;color:var(--text-light);font-weight:400;}
-    footer{text-align:center;padding:32px 20px;color:var(--text-light);font-size:0.8rem;border-top:1px solid var(--lavender-pale);}
-    footer span{color:var(--lavender-mid);font-weight:600;}
+    .folder-count{margin-left:auto;font-size:0.72rem;font-weight:600;opacity:0.45;}
+    footer{text-align:center;padding:28px 20px;font-size:0.82rem;color:var(--text-muted);position:relative;z-index:1;background:linear-gradient(to right,var(--lilac-pale),#FEFCE8,var(--skyblue-pale));border-top:2px solid var(--border);}
+    .footer-flowers{font-size:1.1rem;letter-spacing:4px;display:block;margin-bottom:6px;}
+    footer .name{font-family:'Nunito',sans-serif;font-weight:900;font-size:0.92rem;background:linear-gradient(90deg,#A78BFA,#F472B6,#FBBF24,#60A5FA);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
     @media(max-width:600px){.classes-grid{grid-template-columns:1fr;}header{padding:40px 20px 36px;}}
+    @media(prefers-reduced-motion:reduce){.fl{animation:none;}.class-card,.folder-link{transition:none;}}
   </style>
 </head>
 <body>
   <header>
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <div class="orb orb-3"></div>
-    <div class="orb orb-4"></div>
-    <div class="header-pill">🎓 Nursing School</div>
+    <svg class="header-flowers" viewBox="0 0 1200 220" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <g class="fl" style="transform-origin:72px 220px;">
+        <path d="M 72 220 Q 68 188 72 162" fill="none" stroke="#86EFAC" stroke-width="3" stroke-linecap="round"/>
+        <ellipse cx="58" cy="192" rx="14" ry="6" fill="#86EFAC" opacity=".80" transform="rotate(-40 58 192)"/>
+        <ellipse cx="72" cy="140" rx="8" ry="18" fill="#F9A8D4" opacity=".90"/>
+        <ellipse cx="72" cy="140" rx="8" ry="18" fill="#F9A8D4" opacity=".88" transform="rotate(45 72 140)"/>
+        <ellipse cx="72" cy="140" rx="8" ry="18" fill="#FBCFE8" opacity=".82" transform="rotate(90 72 140)"/>
+        <ellipse cx="72" cy="140" rx="8" ry="18" fill="#FBCFE8" opacity=".82" transform="rotate(135 72 140)"/>
+        <circle cx="72" cy="140" r="11" fill="#FBBF24"/>
+        <circle cx="72" cy="140" r="5.5" fill="#FEF9C3"/>
+      </g>
+      <g class="fl" style="transform-origin:170px 220px;">
+        <path d="M 170 220 Q 165 185 168 155" fill="none" stroke="#86EFAC" stroke-width="3" stroke-linecap="round"/>
+        <ellipse cx="184" cy="188" rx="16" ry="6" fill="#A7F3D0" opacity=".75" transform="rotate(38 184 188)"/>
+        <ellipse cx="168" cy="136" rx="13" ry="22" fill="#C4B5FD" opacity=".88"/>
+        <ellipse cx="154" cy="142" rx="12" ry="20" fill="#A78BFA" opacity=".82" transform="rotate(-16 154 142)"/>
+        <ellipse cx="182" cy="142" rx="12" ry="20" fill="#DDD6FE" opacity=".82" transform="rotate(16 182 142)"/>
+        <ellipse cx="168" cy="150" rx="7" ry="14" fill="#EDE9FE" opacity=".65"/>
+      </g>
+      <g class="fl" style="transform-origin:260px 220px;">
+        <path d="M 260 220 Q 257 200 258 185" fill="none" stroke="#A7F3D0" stroke-width="2" stroke-linecap="round"/>
+        <ellipse cx="258" cy="172" rx="6" ry="12" fill="#F9A8D4" opacity=".82"/>
+        <ellipse cx="258" cy="172" rx="6" ry="12" fill="#FBCFE8" opacity=".75" transform="rotate(90 258 172)"/>
+        <ellipse cx="258" cy="172" rx="5" ry="10" fill="#F9A8D4" opacity=".70" transform="rotate(45 258 172)"/>
+        <ellipse cx="258" cy="172" rx="5" ry="10" fill="#FBCFE8" opacity=".70" transform="rotate(135 258 172)"/>
+        <circle cx="258" cy="172" r="6" fill="#FBBF24" opacity=".92"/>
+        <circle cx="258" cy="172" r="3" fill="#FEF9C3"/>
+      </g>
+      <g class="fl" style="transform-origin:600px 220px;">
+        <path d="M 600 220 Q 597 185 596 158" fill="none" stroke="#86EFAC" stroke-width="3" stroke-linecap="round"/>
+        <path d="M 597 172 Q 562 156 540 134" fill="none" stroke="#A7F3D0" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M 596 165 Q 632 150 656 130" fill="none" stroke="#A7F3D0" stroke-width="2.5" stroke-linecap="round"/>
+        <ellipse cx="540" cy="128" rx="8" ry="15" fill="#BAE6FD" opacity=".90"/>
+        <ellipse cx="540" cy="128" rx="8" ry="15" fill="#BAE6FD" opacity=".85" transform="rotate(60 540 128)"/>
+        <ellipse cx="540" cy="128" rx="8" ry="15" fill="#BFDBFE" opacity=".78" transform="rotate(120 540 128)"/>
+        <circle cx="540" cy="128" r="7" fill="#FBBF24"/>
+        <circle cx="540" cy="128" r="3.5" fill="#FEF9C3"/>
+        <ellipse cx="656" cy="124" rx="8" ry="15" fill="#BAE6FD" opacity=".90"/>
+        <ellipse cx="656" cy="124" rx="8" ry="15" fill="#BAE6FD" opacity=".85" transform="rotate(60 656 124)"/>
+        <ellipse cx="656" cy="124" rx="8" ry="15" fill="#BFDBFE" opacity=".78" transform="rotate(120 656 124)"/>
+        <circle cx="656" cy="124" r="7" fill="#FBBF24"/>
+        <circle cx="656" cy="124" r="3.5" fill="#FEF9C3"/>
+        <ellipse cx="597" cy="136" rx="9" ry="16" fill="#F9A8D4" opacity=".90"/>
+        <ellipse cx="597" cy="136" rx="9" ry="16" fill="#F9A8D4" opacity=".85" transform="rotate(60 597 136)"/>
+        <ellipse cx="597" cy="136" rx="9" ry="16" fill="#FBCFE8" opacity=".78" transform="rotate(120 597 136)"/>
+        <circle cx="597" cy="136" r="9" fill="#FBBF24"/>
+        <circle cx="597" cy="136" r="4.5" fill="#FEF9C3"/>
+      </g>
+      <g class="fl" style="transform-origin:940px 220px;">
+        <path d="M 940 220 Q 937 200 938 185" fill="none" stroke="#A7F3D0" stroke-width="2" stroke-linecap="round"/>
+        <ellipse cx="938" cy="170" rx="6" ry="12" fill="#C4B5FD" opacity=".82"/>
+        <ellipse cx="938" cy="170" rx="6" ry="12" fill="#DDD6FE" opacity=".75" transform="rotate(90 938 170)"/>
+        <ellipse cx="938" cy="170" rx="5" ry="10" fill="#C4B5FD" opacity=".70" transform="rotate(45 938 170)"/>
+        <ellipse cx="938" cy="170" rx="5" ry="10" fill="#DDD6FE" opacity=".70" transform="rotate(135 938 170)"/>
+        <circle cx="938" cy="170" r="6" fill="#FBBF24" opacity=".92"/>
+        <circle cx="938" cy="170" r="3" fill="#FEF9C3"/>
+      </g>
+      <g class="fl" style="transform-origin:1030px 220px;">
+        <path d="M 1030 220 Q 1026 188 1028 162" fill="none" stroke="#86EFAC" stroke-width="3" stroke-linecap="round"/>
+        <ellipse cx="1014" cy="192" rx="15" ry="6" fill="#86EFAC" opacity=".78" transform="rotate(-38 1014 192)"/>
+        <ellipse cx="1028" cy="144" rx="19" ry="15" fill="#FBCFE8" opacity=".78"/>
+        <ellipse cx="1028" cy="144" rx="16" ry="12" fill="#F9A8D4" opacity=".82" transform="rotate(40 1028 144)"/>
+        <ellipse cx="1028" cy="144" rx="16" ry="12" fill="#F472B6" opacity=".58" transform="rotate(80 1028 144)"/>
+        <ellipse cx="1028" cy="144" rx="13" ry="10" fill="#FBCFE8" opacity=".88" transform="rotate(120 1028 144)"/>
+        <ellipse cx="1028" cy="144" rx="10" ry="8" fill="#FDF2F8" opacity=".94" transform="rotate(160 1028 144)"/>
+        <circle cx="1028" cy="144" r="8" fill="#FDE68A" opacity=".88"/>
+        <circle cx="1028" cy="144" r="4" fill="#FEF9C3"/>
+      </g>
+      <g class="fl" style="transform-origin:1128px 220px;">
+        <path d="M 1128 220 Q 1124 186 1126 160" fill="none" stroke="#86EFAC" stroke-width="3" stroke-linecap="round"/>
+        <ellipse cx="1142" cy="192" rx="14" ry="6" fill="#A7F3D0" opacity=".78" transform="rotate(40 1142 192)"/>
+        <ellipse cx="1126" cy="138" rx="7" ry="17" fill="#C4B5FD" opacity=".90"/>
+        <ellipse cx="1126" cy="138" rx="7" ry="17" fill="#DDD6FE" opacity=".84" transform="rotate(30 1126 138)"/>
+        <ellipse cx="1126" cy="138" rx="7" ry="17" fill="#C4B5FD" opacity=".80" transform="rotate(60 1126 138)"/>
+        <ellipse cx="1126" cy="138" rx="7" ry="17" fill="#DDD6FE" opacity=".84" transform="rotate(90 1126 138)"/>
+        <ellipse cx="1126" cy="138" rx="7" ry="17" fill="#C4B5FD" opacity=".80" transform="rotate(120 1126 138)"/>
+        <ellipse cx="1126" cy="138" rx="7" ry="17" fill="#DDD6FE" opacity=".84" transform="rotate(150 1126 138)"/>
+        <circle cx="1126" cy="138" r="11" fill="#FBBF24"/>
+        <circle cx="1126" cy="138" r="5.5" fill="#FEF9C3"/>
+      </g>
+      <ellipse cx="220" cy="210" rx="12" ry="5" fill="#86EFAC" opacity=".55" transform="rotate(22 220 210)"/>
+      <ellipse cx="840" cy="205" rx="12" ry="5" fill="#A7F3D0" opacity=".50" transform="rotate(-18 840 205)"/>
+      <ellipse cx="460" cy="200" rx="10" ry="4" fill="#86EFAC" opacity=".45" transform="rotate(15 460 200)"/>
+      <ellipse cx="750" cy="208" rx="10" ry="4" fill="#A7F3D0" opacity=".45" transform="rotate(-12 750 208)"/>
+    </svg>
+    <div class="header-pill">🌸 Nursing School</div>
     <h1>Alonna's Study Hub</h1>
     <p>All your interactive study materials, organized by class — one tap to open.</p>
   </header>
   <main>
-    <div class="section-label">Your Classes</div>
+    <div class="section-label">🌷 Your Classes</div>
     <div class="classes-grid">
       <div class="class-card med-surg">
         <div class="card-header">
@@ -121,9 +205,12 @@ Here's your complete code — select it all and paste it into GitHub:Copy everyt
       </div>
     </div>
   </main>
-  <footer>Built with 💜 for <span>Alonna Terrell</span> · Nursing School Study Hub</footer>
+  <footer>
+    <span class="footer-flowers">🌸 🌷 💐 🌼 🌺</span>
+    Made with love for <span class="name">Alonna Terrell</span> · Nursing School Study Hub
+  </footer>
 </body>
 </html>
 ```
 
-Copy from `<!DOCTYPE html>` all the way to the last `</html>` and paste it into the GitHub editor, then click **Commit changes**!
+Copy from `<!DOCTYPE html>` all the way to `</html>`, paste into the GitHub editor, and commit! 🌸
